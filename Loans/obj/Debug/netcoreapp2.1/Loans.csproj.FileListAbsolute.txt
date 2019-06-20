@@ -1,0 +1,9 @@
+E:\Projects\Automation Tests\NUnit.Tests\Loans\bin\Debug\netcoreapp2.1\Loans.deps.json
+E:\Projects\Automation Tests\NUnit.Tests\Loans\bin\Debug\netcoreapp2.1\Loans.dll
+E:\Projects\Automation Tests\NUnit.Tests\Loans\bin\Debug\netcoreapp2.1\Loans.pdb
+E:\Projects\Automation Tests\NUnit.Tests\Loans\obj\Debug\netcoreapp2.1\Loans.csprojAssemblyReference.cache
+E:\Projects\Automation Tests\NUnit.Tests\Loans\obj\Debug\netcoreapp2.1\Loans.csproj.CoreCompileInputs.cache
+E:\Projects\Automation Tests\NUnit.Tests\Loans\obj\Debug\netcoreapp2.1\Loans.AssemblyInfoInputs.cache
+E:\Projects\Automation Tests\NUnit.Tests\Loans\obj\Debug\netcoreapp2.1\Loans.AssemblyInfo.cs
+E:\Projects\Automation Tests\NUnit.Tests\Loans\obj\Debug\netcoreapp2.1\Loans.dll
+E:\Projects\Automation Tests\NUnit.Tests\Loans\obj\Debug\netcoreapp2.1\Loans.pdb
