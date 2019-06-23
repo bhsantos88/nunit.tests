@@ -1,10 +1,9 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Loans.Tests
 {
+    [Ignore("Sample to understand another type of tests.")]
     public class AnotherTests
     {
         [Test]

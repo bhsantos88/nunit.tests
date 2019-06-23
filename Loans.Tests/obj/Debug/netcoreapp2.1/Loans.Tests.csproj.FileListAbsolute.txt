@@ -15,3 +15,4 @@ E:\Projects\Automation Tests\NUnit.Tests\Loans.Tests\obj\Debug\netcoreapp2.1\Loa
 E:\Projects\Automation Tests\NUnit.Tests\Loans.Tests\obj\Debug\netcoreapp2.1\Loans.Tests.csproj.CopyComplete
 E:\Projects\Automation Tests\NUnit.Tests\Loans.Tests\obj\Debug\netcoreapp2.1\Loans.Tests.dll
 E:\Projects\Automation Tests\NUnit.Tests\Loans.Tests\obj\Debug\netcoreapp2.1\Loans.Tests.pdb
+E:\Projects\Automation Tests\NUnit.Tests\Loans.Tests\bin\Debug\netcoreapp2.1\Data.csv
