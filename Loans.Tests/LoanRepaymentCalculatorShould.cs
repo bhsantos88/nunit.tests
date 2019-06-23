@@ -1,8 +1,5 @@
 ﻿using Loans.Domain.Applications;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Loans.Tests
 {
@@ -70,6 +67,36 @@ namespace Loans.Tests
                                     new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
 
             Assert.That(monthlyPayment, Is.EqualTo(expectedMonthlyPayment));
+        }
+
+        // These test will create a combination of tests with the values inputted on Values attribute.
+        [Test]
+        public void CalculateCorrectMonthlyRepayment_Combinatorial(
+            [Values(100_000, 200_000, 500_000)]decimal principal,
+            [Values(6.5, 10, 20)]decimal interestRate,
+            [Values(10, 20, 30)]int termInYears)
+        {
+            var sut = new LoanRepaymentCalculator();
+
+            var monthlyPayment = sut.CalculateMonthlyRepayment(
+                                    new LoanAmount("USD", principal),
+                                    interestRate,
+                                    new LoanTerm(termInYears));
+        }
+
+        // These test will create a combination of tests with the values between set range and inputted values in Range and Values attribute.
+        [Test]
+        public void CalculateCorrectMonthlyRepayment_Range(
+            [Range(50_000, 1_000_000, 50_000)]decimal principal,
+            [Range(0.5, 20, 0.5)]decimal interestRate,
+            [Values(10, 20, 30)]int termInYears)
+        {
+            var sut = new LoanRepaymentCalculator();
+
+            var monthlyPayment = sut.CalculateMonthlyRepayment(
+                                    new LoanAmount("USD", principal),
+                                    interestRate,
+                                    new LoanTerm(termInYears));
         }
 
     }

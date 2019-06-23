@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Loans.Tests
 {
-    [Category("Product Comparison")]
+    [ProductComparison]
     public class ProductComparerShould
     {
         private List<LoanProduct> products;
@@ -77,11 +77,14 @@ namespace Loans.Tests
             List<MonthlyRepaymentComparison> comparisons = sut.CompareMonthlyRepayments(new LoanTerm(30));
             
             // Best way to do, because don't have the possibility to make mistakes with the property name (Type safe).
+            //Assert.That(comparisons, Has.Exactly(1).
+            //    Matches<MonthlyRepaymentComparison>(
+            //    item => item.ProductName == "a" &&
+            //    item.InterestRate == 1 &&
+            //    item.MonthlyRepayment > 0));
+            
             Assert.That(comparisons, Has.Exactly(1).
-                Matches<MonthlyRepaymentComparison>(
-                item => item.ProductName == "a" &&
-                item.InterestRate == 1 &&
-                item.MonthlyRepayment > 0));
+                Matches(new MonthlyRepaymentGreaterThanZeroConstraints("a", 1)));
         }
     }
 }
